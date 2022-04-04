@@ -1,0 +1,15 @@
+.loading, .error {
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error {
+    color: #a81e1e;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.loading.large img {
+    height: 10vmin;
+}
