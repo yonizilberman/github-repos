@@ -20,7 +20,11 @@ export const App: FC = () => {
     <div className="App">
       <header className="App-header">
         <p>
-          {!open && <button onClick={handleClick}>back</button>}
+          {width <= 850 && (
+            <button onClick={handleClick}>{`back to ${
+              open ? "repos" : "issues"
+            }`}</button>
+          )}
           <code>gitHub repos / issues</code> (Enter your Github API key).
         </p>
       </header>
