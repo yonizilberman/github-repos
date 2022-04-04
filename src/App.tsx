@@ -16,24 +16,18 @@ export const App: FC = () => {
     setOpen(!open);
   };
 
-  const clcik = async (url: string): Promise<void> => {
-    setOpen(!open);
-    getIssues(url);
-  };
-
-
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          {width <= 850 && <button onClick={handleClick}>{`back to ${open ? 'Issues' : 'Repos'}`}</button>}
+          {!open && <button onClick={handleClick}>back</button>}
           <code>gitHub repos / issues</code> (Enter your Github API key).
         </p>
       </header>
       <SubTitle onClick={setToken} />
       <div className="container">
         {(open || width >= 850) && (
-          <Repos getIssues={clcik} {...restRepos} />
+          <Repos getIssues={getIssues} {...restRepos} />
         )}
         {(!open || width >= 850) && <Issues {...restIssues} />}
       </div>

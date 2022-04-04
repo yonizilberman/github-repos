@@ -31,7 +31,7 @@ export const Repo: FC<RepoProps> = ({
         <p>{description}</p>
       </div>
       <div className="leftSide">
-        {Boolean(open_issues_count) && <button onClick={handleClick}>{">"}</button>}
+        <button onClick={handleClick}>{">"}</button>
       </div>
     </li>
   );
