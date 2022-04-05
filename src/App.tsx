@@ -34,8 +34,8 @@ export const App: FC = () => {
                             open ? "repos" : "issues"
                         }`}</button>
                     )}
-                    <code>gitHub repos / issues</code> (Enter your Github API
-                    key).
+                    <code>gitHub repositories / issues</code> (Enter your Github
+                    API key).
                 </p>
             </header>
             <SubTitle onClick={handleSSetTokenClick} />
