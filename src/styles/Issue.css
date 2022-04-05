@@ -2,33 +2,33 @@
     padding: 10px 35px;
     display: flex;
     flex-wrap: nowrap;
-  }
-  .issueContainer > .rightSide {
-    flex-grow: 1; 
-  }
+}
+.issueContainer > .rightSide {
+    flex-grow: 1;
+}
 
-  .issueContainer .userInfo {
+.issueContainer .userInfo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .issueContainer img {
+}
+
+.issueContainer img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
     border-radius: 50%;
     display: inline;
-  }
-  .issueContainer .userInfo h4 {  
+}
+.issueContainer .userInfo h4 {
     display: flex;
     align-items: center;
-  }
-  
-  .issueContainer h4 {
-    padding: 6px 0;
-  }
+}
 
-  .issueContainer p {
-      padding-left: 15px;
-  }
+.issueContainer h4 {
+    padding: 6px 0;
+}
+
+.issueContainer p {
+    padding-left: 15px;
+}

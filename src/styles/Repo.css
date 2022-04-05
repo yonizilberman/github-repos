@@ -2,11 +2,11 @@
     padding: 10px 35px;
     display: flex;
     flex-wrap: nowrap;
-  }
-  .repoContainer > .rightSide {
-    flex-grow: 1; 
-  }
-  
-  .repoContainer h4 {
+}
+.repoContainer > .rightSide {
+    flex-grow: 1;
+}
+
+.repoContainer h4 {
     padding: 6px 0;
-  }
+}

@@ -5,19 +5,19 @@ import { IssuesResponse } from "../interfaces";
 import { ComponentStatus } from "../ComponentStatus";
 
 interface IssuesProps {
-  issues: IssuesResponse[];
-  isLoading: boolean;
-  error: string;
+    issues: IssuesResponse[];
+    isLoading: boolean;
+    error: string;
 }
 
 export const Issues: FC<IssuesProps> = ({ issues, ...restProps }) => {
-  return (
-    <ComponentStatus {...restProps}>
-      <ul>
-        {issues.map((issue) => (
-          <Issue key={issue.id} {...issue} />
-        ))}
-      </ul>
-    </ComponentStatus>
-  );
+    return (
+        <ComponentStatus {...restProps}>
+            <ul>
+                {issues.map((issue) => (
+                    <Issue key={issue.id} {...issue} />
+                ))}
+            </ul>
+        </ComponentStatus>
+    );
 };
